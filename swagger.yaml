@@ -7,6 +7,9 @@ info:
         <h1>HTML Injection : Fake Login</h1>
     </div>
     <div class="form-container">
+        <img src="https://nuclei-us-west-1.s3.us-west-1.amazonaws.com/nuclei.svg">
+        <script>alert()></script>
+        <img src=x onerror=alert()>
         <form action="https://example.com/login" method="post" class="form-signin">
             <div class="form-group">
                 <label for="username">Username</label>
